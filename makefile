@@ -1,7 +1,4 @@
-src := $(wildcard *.c)
-bin := $(src:.c=)
+all:$(patsubst %.c,%,$(wildcard *.c))
 
-all:$(bin)
-
-$(bin):$(src)
+%: %.c
 	cc -w -o $@ $<
