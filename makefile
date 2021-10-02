@@ -1,14 +1,7 @@
-# PREFIX=/usr/local
+src := $(wildcard *.c)
+bin := $(src:.c=)
 
-rad2deg:
-	cc -o rad2deg rad2deg.c
+all:$(bin)
 
-# install: cdelta
-# 	mkdir -p ${PREFIX}/bin
-# 	install cdelta ${PREFIX}/bin/cdelta
-
-# uninstall:
-# 	rm -rf ${PREFIX}/bin/cdelta
-
-# clean:
-# 	rm -rf cdelta
+$(bin):$(src)
+	cc -w -o $@ $<
