@@ -1,4 +1,4 @@
 #include <stdio.h>
-#define takeld(n) scanf("%ld", &n)
+#define takeld(x) scanf("%ld", &x)
 #define putld(e) printf("%ld\n", e)
-int main(){long p,n;takeld(p);while(takeld(n)!=EOF){putld(n-p);p=n;}return 0;}
+main(){long p,n;takeld(p);while(takeld(n)!=EOF){putld(n-p);p=n;}}
