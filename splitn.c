@@ -9,6 +9,7 @@ main(int x,char** v){if(x>1){
 		strtok(l,"\n");
 		for(x=0;x<strlen(l)/n+1;x++) printf("%.*s\t",n,&l[x*n]);
 		putchar(10);
+		fflush(stdout);
 	}
 	return 0;
 
